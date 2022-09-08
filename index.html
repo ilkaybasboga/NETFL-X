@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLİX</title>
+    <meta name="keywords" content="Python,Java,JavaScript">
+    <meta name="description" content="NETFLİX">
+    <style>
+        div.background {
+          background:no-repeat center;
+          background-size: cover;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          margin: 0px;
+        }
+        
+        div.transbox {
+          background-color: rgba(41, 37, 37, 0.4);
+          width: 95rem;
+          height: 54rem;          
+          font-weight: bold;
+          position: absolute;
+          text-align: center;
+          color: white;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 0.75rem;
+          bottom: 1rem;
+          
+          
+          
+        }
+        .contact-form{
+          
+            color: white;
+            position: absolute;
+            flex-direction: column; 
+            box-sizing: border-box;
+            border-radius: 5px;
+            height:47rem;
+            width: 25rem; 
+            bottom: 1rem;  
+            padding: 15px;    
+            font-size: 14px;
+            background-color: rgba(0, 0, 0, 0.75);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-group{
+           margin: 10px;
+          
+           line-height: 25px;  
+        }
+        .form-control{
+            width: 100%;
+            height: 2.5rem;
+            border-radius: 3px;
+        }
+        #select{
+            width: 90%;
+            height: 2rem;
+            border-radius: 3px;
+        }
+        #message{
+            width: 80%;
+            height: 5rem;
+            resize: none;
+        }
+      
+        .btn{
+            background: red;
+            color: white;
+            border-radius: 20px;
+             width: 40%;
+            height: 2.5rem;
+            margin-left: 6.5rem;
+            margin-top: 1rem;            
+             }            
+             .span1  {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size:2.5rem;
+                color: white;                
+             }
+             .span2 {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size:2rem;
+                color: white; 
+             }
+             .span3{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size:2.5rem;
+                color: tomato; 
+             }
+             .span4 {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size:2rem;
+                color: tomato; 
+             }
+        </style>
+</head>
+<body>
+
+
+<div class="background">
+    <img class="img" src="images/NETFLİX.jpeg" alt="NETFLİX">
+
+  <div class="transbox">
+    <h1 > <span class="span1">N</span><span class="span2">ET</span><span class="span3">F</span><span class="span4">LİX</span> </h1>
+    <h2 class="text-center heading-medium">Thank you for signing up at Netflix.Tell us more about your self</h2> 
+</div>  
+   
+<div class="contact-form">
+                
+        <form>
+            
+            
+            <div class="form-group">
+                <label for="name">Name</label> <br>
+                <input 
+                type="text" 
+                class="form-control" 
+                name="name" 
+                id="name" 
+                placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label> <br>
+                <input 
+                type="text" 
+                class="form-control" 
+                name="age" 
+                id="age" 
+                placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label> <br>
+                <input 
+                type="text" 
+                class="form-control" 
+                name="email" 
+                id="email" 
+                placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+                <label for="content-type">Content type</label>  <br>
+                <select name="select" id="select">
+                <option value="series">Series</option>
+                <option value="solo">Solo</option>
+            </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="movie-type">Movie type</label> <br>
+                <input type="checkbox" name="comedy">Comedy <br>
+                <input type="checkbox" name="action">Action <br>
+                <input type="checkbox" name="romance">Romance <br>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender</label> <br>
+                <input type="radio" name="gander">Male <br>
+                <input type="radio" name="gander">Female <br>
+                <input type="radio" name="gander">Other <br>
+            </div>
+
+            <div class="form-group">
+                <label for="feed-back">Feed back</label> <br>
+                <textarea 
+                name="message" 
+                id="message" 
+                class="form-control" 
+                rows="10" 
+                placeholder="  Any comment"
+                ></textarea>
+
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </div>
+  
+</div>
+</body>
+</html>
